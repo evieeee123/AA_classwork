@@ -1,10 +1,26 @@
 class Dog
-    def initialize(name, breed, age, bark, favorite_food)
+    def initialize(name, breed, age, bark, favorite_foods)
         @name = name
         @breed = breed
         @age = age
         @bark = bark
-        @favorite_food = favorite_food
+        @favorite_foods = favorite_foods
+    end
+
+    def name
+        @name
+    end
+
+    def breed
+        @breed
+    end
+
+    def age 
+        @age
+    end
+
+    def favorite_foods
+        @favorite_foods
     end
 
     def age=(number)
@@ -12,5 +28,15 @@ class Dog
     end
 
     def bark
-        
+        if @age > 3
+            return @bark.upcase
+        else 
+            return @bark.downcase
+        end
+    end
+
+    def favorite_food?(item)
+        @favorite_foods.map(&:downcase).include?(item.downcase)
+    end
+
 end

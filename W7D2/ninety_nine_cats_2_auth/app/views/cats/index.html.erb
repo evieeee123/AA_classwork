@@ -1,0 +1,20 @@
+<h1>Cats upon cats!</h1>
+
+<% if logged_in?%>
+  <h2>Welcome, <%= current_user.user_name %>!</h2>
+  <form action="<%= session_url %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="LOGOUT">
+  </form>
+  <% else %>
+  <a href="<%= new_user_url %>">Sign Up</a>
+  <a href="<%= new_session_url %>">Sign In</a>
+<% end %>
+
+<ul>
+  <% @cats.each do |cat| %>
+    <li><a href="<%= cat_url(cat) %>"><%= cat.name %></a></li>
+  <% end %>
+</ul>
+
+

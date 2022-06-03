@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <link rel="stylesheet" href="./assets/application.css" type="text/css"/>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<header>MusicApp</header>
+
+  <body>
+    <% if flash[:errors] %>
+      <ul><%= flash[:errors].each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+      </ul>
+    <% end %>
+
+  <%= flash[:messages] %>
+
+    <%= yield %>
+  </body>
+</html>

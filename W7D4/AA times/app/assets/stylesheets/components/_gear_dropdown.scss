@@ -1,0 +1,35 @@
+// Use the gear_dropdown.png screenshot as a style guide
+#dropdown {
+    display: none;
+    position: relative;
+
+
+}
+
+// .editions {
+//     // display: none;
+//     position: relative;
+//     flex-direction: column;
+// }
+
+// .gear-dropdown {
+//     display: none;
+//     position: relative;
+// }
+// li > #dropdown:hover 
+// .gear-dropdown > li:hover {
+//   display: block;
+//   position: absolute;
+// //   display: none;
+// }
+
+#dropdown{
+  display: block;
+  position: absolute;
+  top: 70px
+}
+
+.gear-dropdown hidden {
+
+}
+

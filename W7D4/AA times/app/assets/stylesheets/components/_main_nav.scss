@@ -1,0 +1,58 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #e2e2e2 solid 1px;
+}
+
+.left-nav > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+.right-nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.right-nav>ul>li {
+  padding: 10px 10px;
+}
+
+.left-nav {
+
+  > ul {
+    > li {
+      padding: 10px 10px;
+    }
+  }
+
+
+  span {
+
+  }
+}
+
+.right-nav  {
+
+  > ul {
+
+    > li {
+  
+    }
+
+    > li:last-of-type {
+  
+    }
+  }
+  
+  i {
+
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+
+}

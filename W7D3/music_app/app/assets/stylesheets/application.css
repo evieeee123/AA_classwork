@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    text-align: center;
+    text-decoration: dotted;
+    font-size: 35px;
+    font-style: oblique;
+    margin: 20px;
+ }
+
+ .signup {
+     margin: 20px;
+     background-color: burlywood;
+     border-radius: 28px;
+     text-decoration: none;
+ }
+
+.login {
+    margin: 20px;
+    background-color: burlywood;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+ h1 {
+     margin: 20px;
+     color: blueviolet;
+     text-align: center;
+    }
+
+h2 {
+    margin: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+
+a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 28px;
+    font-size: 20px;
+    text-decoration: rgb(221, 221, 109);
+    
+}
+
+.userinput {
+    margin: 20px;
+    align-items: center;
+    background-color: antiquewhite;
+    /* margin-left: 300px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+}
+
+input[type="submit"] {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(205, 249, 249);
+}
+
+form {
+    justify-content: center;
+}
